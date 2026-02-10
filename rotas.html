@@ -6,27 +6,23 @@
 
 <title>Passeios e Transfers no RN | UP Experience Natal</title>
 
-<meta name="description" content="Passeios e transfers no Rio Grande do Norte com a UP Experience Natal. Pipa RN, Maracajaú, Rio do Fogo, Buggy em Genipabu, Galinhos, 4x4, Quadriciclo, São Miguel do Gostoso e Transfers Aeroporto.">
-<meta name="keywords" content="Passeios RN, Transfer Natal, Pipa RN, Maracajaú RN, Rio do Fogo RN, Buggy Genipabu, Galinhos RN, 4x4 Litoral Sul, Quadriciclo RN, São Miguel do Gostoso">
+<meta name="description" content="Passeios e transfers no Rio Grande do Norte com a UP Experience Natal. Pipa RN, Maracajaú, Rio do Fogo, Buggy em Genipabu, Galinhos, 4x4 Litoral Sul, Quadriciclo, Lagoas do Litoral Sul, São Miguel do Gostoso e Transfers Aeroporto.">
+<meta name="keywords" content="Passeios RN, Transfer Natal, Pipa RN, Maracajaú RN, Rio do Fogo RN, Buggy Genipabu, Galinhos RN, 4x4 RN, Quadriciclo RN, Lagoas RN, São Miguel do Gostoso, Transfer Aeroporto Natal">
 <meta name="author" content="UP Experience Natal">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-<style>
 :root{
+  --primary:#00c2ff;
+  --secondary:#ff005c;
   --bg1:#0f2027;
   --bg2:#203a43;
   --bg3:#2c5364;
-  --primary:#00c2ff;
+  --success:#25D366;
 }
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Inter',sans-serif;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
 
 body{
   background:linear-gradient(135deg,var(--bg1),var(--bg2),var(--bg3));
@@ -34,96 +30,196 @@ body{
 }
 
 /* HEADER */
-.header{
-  padding:22px;
+header{
+  padding:20px;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  position:relative;
 }
-
-.brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
-}
-
+.brand{display:flex;gap:12px;align-items:center}
 .logo{
-  background:linear-gradient(45deg,#00c2ff,#ff005c);
-  padding:12px 16px;
+  background:linear-gradient(45deg,var(--primary),var(--secondary));
+  padding:12px 14px;
   border-radius:14px;
   font-weight:800;
-  font-size:18px;
 }
+.brand-title{font-weight:700}
 
-.brand-text strong{
-  font-size:15px;
-}
-
-.brand-text span{
-  font-size:12px;
-  opacity:.8;
-}
-
-/* MENU DESKTOP */
-.nav-desktop a{
+/* NAV */
+nav a{
   color:#fff;
   margin-left:18px;
   text-decoration:none;
   font-weight:500;
 }
 
-/* BOTÃO MOBILE */
-.menu-btn{
-  display:none;
-  font-size:28px;
-  cursor:pointer;
-}
-
-/* MENU MOBILE */
-.menu-mobile{
+/* MOBILE MENU */
+.menu-btn{display:none;font-size:26px;cursor:pointer}
+.mobile-menu{
   display:none;
   position:fixed;
   inset:0;
-  background:linear-gradient(135deg,var(--bg1),var(--bg2),var(--bg3));
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  gap:30px;
+  background:#0f2027;
+  padding:40px;
   z-index:999;
 }
-
-.menu-mobile a{
+.mobile-menu a{
+  display:block;
   color:#fff;
-  font-size:22px;
-  font-weight:600;
+  font-size:20px;
+  margin-bottom:20px;
   text-decoration:none;
 }
 
-/* RESPONSIVO */
+/* CONTAINER */
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:30px 20px;
+}
+
+/* SEARCH */
+.search-box input{
+  width:100%;
+  padding:16px;
+  border-radius:16px;
+  border:none;
+  font-size:16px;
+  margin-bottom:30px;
+}
+
+/* TITLES */
+.section h2{
+  font-size:28px;
+  margin-bottom:6px;
+}
+.section p{
+  opacity:.85;
+  margin-bottom:28px;
+}
+
+/* GRID */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:28px;
+}
+
+/* CARD */
+.tour-card{
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(10px);
+  border-radius:22px;
+  overflow:hidden;
+  transition:.4s;
+  display:flex;
+  flex-direction:column;
+}
+.tour-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 20px 40px rgba(0,0,0,.45);
+}
+
+.tour-card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.tour-content{
+  padding:18px;
+  flex:1;
+}
+
+.tour-content h3{
+  font-size:19px;
+  margin-bottom:6px;
+}
+
+.rating{
+  color:#ffd700;
+  font-size:14px;
+  margin-bottom:6px;
+}
+
+.comments{
+  font-size:13px;
+  opacity:.85;
+  margin-bottom:8px;
+}
+
+.tour-content p{
+  font-size:14px;
+  line-height:1.5;
+  opacity:.95;
+  margin-bottom:10px;
+}
+
+.info{
+  font-size:13px;
+  opacity:.9;
+  margin-bottom:12px;
+}
+
+.price{
+  font-size:18px;
+  font-weight:700;
+  color:var(--primary);
+}
+
+/* BUTTON */
+.btn{
+  background:linear-gradient(45deg,var(--success),#1ebe5d);
+  color:#fff;
+  text-decoration:none;
+  padding:15px;
+  text-align:center;
+  font-weight:600;
+}
+
+/* FOOTER */
+.footer{
+  background:rgba(0,0,0,.3);
+  padding:30px;
+  text-align:center;
+  margin-top:50px;
+}
+.footer p{opacity:.85;font-size:14px}
+
+/* FLOAT WHATS */
+.whatsapp-float{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  padding:16px 20px;
+  border-radius:50px;
+  color:#fff;
+  font-weight:600;
+  text-decoration:none;
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
+  z-index:999;
+}
+
 @media(max-width:768px){
-  .nav-desktop{
-    display:none;
-  }
-  .menu-btn{
-    display:block;
-  }
+  nav{display:none}
+  .menu-btn{display:block}
 }
 </style>
 </head>
 
 <body>
 
-<header class="header">
+<header>
   <div class="brand">
     <div class="logo">UP</div>
-    <div class="brand-text">
-      <strong>UP Experience Natal</strong><br>
-      <span>Passeios completos pelo RN</span>
+    <div>
+      <div class="brand-title">UP Experience Natal</div>
+      <div style="font-size:12px;opacity:.8">Passeios e Transfers no RN</div>
     </div>
   </div>
 
-  <nav class="nav-desktop">
+  <nav>
     <a href="index.html">Início</a>
     <a href="rotas.html">Passeios</a>
     <a href="galeria.html">Galeria</a>
@@ -133,22 +229,13 @@ body{
   <div class="menu-btn" onclick="toggleMenu()">☰</div>
 </header>
 
-<div class="menu-mobile" id="menuMobile">
-  <a href="index.html" onclick="toggleMenu()">Início</a>
-  <a href="rotas.html" onclick="toggleMenu()">Passeios</a>
-  <a href="galeria.html" onclick="toggleMenu()">Galeria</a>
-  <a href="carrinho.html" onclick="toggleMenu()">Reservar</a>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Início</a>
+  <a href="rotas.html">Passeios</a>
+  <a href="galeria.html">Galeria</a>
+  <a href="carrinho.html">Reservar</a>
+  <a href="#" onclick="toggleMenu()">Fechar</a>
 </div>
-
-<script>
-function toggleMenu(){
-  const menu = document.getElementById('menuMobile');
-  menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-}
-</script>
-
-</body>
-</html>
 
 <main class="container">
 
@@ -331,4 +418,3 @@ search.addEventListener("keyup",()=>{
 
 </body>
 </html>
-
