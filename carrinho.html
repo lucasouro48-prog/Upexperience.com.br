@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Reserva de Passeios em Natal RN | UP Experience Natal</title>
+
+<meta name="description" content="Reserve seu passeio em Natal e no RN com a UP Experience Natal. Atendimento rápido via WhatsApp, passeios completos e seguros.">
+<meta name="keywords" content="Reserva Passeios Natal RN, Passeios Pipa RN, Maracajaú, Genipabu, Galinhos, São Miguel do Gostoso">
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:linear-gradient(180deg,#0f1c2e,#07101f);
+color:#fff;
+}
+
+header{
+background:#07101f;
+padding:18px 22px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:800;
+font-size:18px;
+}
+
+.logo{
+background:#25d366;
+color:#000;
+padding:8px 14px;
+border-radius:12px;
+font-weight:900;
+}
+
+/* BOTÃO VOLTAR */
+.back-btn{
+background:transparent;
+border:1px solid #25d366;
+color:#25d366;
+padding:8px 14px;
+border-radius:12px;
+text-decoration:none;
+font-weight:700;
+font-size:14px;
+transition:.3s;
+}
+
+.back-btn:hover{
+background:#25d366;
+color:#000;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+}
+
+.reserve-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+@media(max-width:900px){
+.reserve-grid{grid-template-columns:1fr}
+}
+
+.reserve-info h1{
+margin-top:0;
+font-size:32px;
+}
+
+.reserve-info p{
+opacity:.9;
+font-size:16px;
+line-height:1.6;
+}
+
+.benefits{
+margin-top:25px;
+}
+
+.benefits p{
+margin:8px 0;
+font-size:15px;
+}
+
+.simple-reserve{
+background:#0c1b33;
+padding:30px;
+border-radius:20px;
+box-shadow:0 20px 50px rgba(0,0,0,.5);
+}
+
+.simple-reserve h2{
+text-align:center;
+margin-top:0;
+margin-bottom:8px;
+}
+
+.simple-reserve small{
+display:block;
+text-align:center;
+opacity:.7;
+margin-bottom:25px;
+}
+
+.simple-reserve label{
+font-weight:700;
+font-size:14px;
+margin-top:14px;
+display:block;
+}
+
+.simple-reserve input,
+.simple-reserve select{
+width:100%;
+padding:14px;
+margin-top:6px;
+border-radius:12px;
+border:none;
+font-size:15px;
+outline:none;
+background:#fff;
+}
+
+.simple-reserve button{
+width:100%;
+margin-top:26px;
+background:#25d366;
+color:#000;
+border:none;
+padding:16px;
+font-size:18px;
+border-radius:14px;
+font-weight:900;
+cursor:pointer;
+}
+
+.simple-reserve button:hover{
+opacity:.9;
+}
+
+.note{
+text-align:center;
+font-size:13px;
+opacity:.7;
+margin-top:12px;
+}
+
+footer{
+background:#050b16;
+padding:50px 20px;
+margin-top:60px;
+}
+
+.footer-grid{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
+
+.footer-grid h3{
+color:#4fc3ff;
+margin-bottom:10px;
+}
+
+.footer-bottom{
+text-align:center;
+margin-top:30px;
+font-size:13px;
+opacity:.6;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">
+    <div class="logo">UP</div>
+    UP Experience Natal
+  </div>
+
+  <!-- BOTÃO VOLTAR -->
+  <a href="index.html" class="back-btn">⬅ Voltar ao início</a>
+</header>
+
+<main class="container">
+
+<section class="reserve-grid">
+
+<div class="reserve-info">
+  <h1>Reserve seu Passeio com Segurança</h1>
+  <p>
+    Preencha o formulário e finalize sua reserva diretamente no WhatsApp.
+    Atendimento rápido, veículos confortáveis e os melhores passeios do
+    Rio Grande do Norte.
+  </p>
+
+  <div class="benefits">
+    <p>🚐 Transporte climatizado e seguro</p>
+    <p>🧭 Guias experientes e locais</p>
+    <p>⭐ Avaliação 5 estrelas no atendimento</p>
+    <p>📲 Confirmação imediata pelo WhatsApp</p>
+  </div>
+</div>
+
+<div class="simple-reserve">
+  <h2>Reserva Rápida</h2>
+  <small>Leva menos de 1 minuto</small>
+
+  <label>Seu nome</label>
+  <input type="text" id="nome" placeholder="Digite seu nome completo">
+
+  <label>Escolha o passeio</label>
+  <select id="passeio">
+    <option value="">Selecione o passeio</option>
+    <option>Pipa RN</option>
+    <option>Maracajaú RN</option>
+    <option>Rio do Fogo RN</option>
+    <option>Buggy em Genipabu</option>
+    <option>Galinhos RN</option>
+    <option>4x4 Litoral Sul RN</option>
+    <option>Quadriciclo</option>
+    <option>Lagoas do Litoral Sul</option>
+    <option>São Miguel do Gostoso</option>
+  </select>
+
+  <label>Data desejada</label>
+  <input type="date" id="data">
+
+  <label>Número de pessoas</label>
+  <select id="pessoas">
+    <option value="">Selecione</option>
+    <option>1 pessoa</option>
+    <option>2 pessoas</option>
+    <option>3 pessoas</option>
+    <option>4 pessoas</option>
+    <option>5 ou mais</option>
+  </select>
+
+  <button onclick="enviarWhats()">Finalizar no WhatsApp</button>
+  <div class="note">Você será direcionado para o WhatsApp</div>
+</div>
+
+</section>
+</main>
+
+<footer>
+<div class="footer-grid">
+<div>
+<h3>UP Experience Natal</h3>
+<p>Turismo receptivo em Natal e no Rio Grande do Norte.</p>
+</div>
+<div>
+<h3>Contato</h3>
+<p>📞 WhatsApp: (84) 9963-8395</p>
+<p>📧 contato@upexperiencenatal.com.br</p>
+</div>
+<div>
+<h3>Redes Sociais</h3>
+<p>📸 Instagram: @upexperiencenatal</p>
+</div>
+</div>
+
+<div class="footer-bottom">
+© 2026 UP Experience Natal — Todos os direitos reservados
+</div>
+</footer>
+
+<script>
+function enviarWhats(){
+const nome = document.getElementById('nome').value;
+const passeio = document.getElementById('passeio').value;
+const data = document.getElementById('data').value;
+const pessoas = document.getElementById('pessoas').value;
+
+if(nome === '' || passeio === ''){
+alert('Por favor, preencha seu nome e selecione o passeio.');
+return;
+}
+
+const msg =
+`Olá! Gostaria de reservar um passeio com a UP Experience Natal.%0A
+🙋 Nome: ${nome}%0A
+📍 Passeio: ${passeio}%0A
+📅 Data: ${data || 'A definir'}%0A
+👥 Pessoas: ${pessoas || 'A definir'}`;
+
+window.open(
+`https://wa.me/558499638395?text=${msg}`,
+'_blank'
+);
+}
+</script>
+
+</body>
+</html>

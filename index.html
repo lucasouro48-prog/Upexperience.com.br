@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>UP Experience Natal | Passeios e Turismo no RN</title>
+
+<meta name="description" content="Passeios turísticos em Natal e no Rio Grande do Norte com a UP Experience Natal. Pipa RN, Maracajaú, Rio do Fogo, Buggy em Genipabu, Galinhos e Transfers.">
+<meta name="keywords" content="Passeios em Natal RN, Turismo RN, Pipa RN, Maracajaú RN, Buggy Genipabu, Galinhos RN, Transfers Natal">
+<meta name="author" content="UP Experience Natal">
+
+<!-- OPEN GRAPH -->
+<meta property="og:title" content="UP Experience Natal - Turismo no RN">
+<meta property="og:description" content="Viva Natal em alto nível com passeios completos, seguros e bem avaliados.">
+<meta property="og:image" content="img/logo.jpg">
+<meta property="og:type" content="website">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<!-- SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"TouristAgency",
+  "name":"UP Experience Natal",
+  "description":"Agência de turismo especializada em passeios e transfers no Rio Grande do Norte",
+  "address":{
+    "@type":"PostalAddress",
+    "addressLocality":"Natal",
+    "addressRegion":"RN",
+    "addressCountry":"BR"
+  },
+  "telephone":"+55 84 99999-9999"
+}
+</script>
+
+<style>
+:root{
+  --primary:#00c2ff;
+  --secondary:#ff005c;
+  --bg1:#0f2027;
+  --bg2:#203a43;
+  --bg3:#2c5364;
+  --success:#25D366;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+
+body{
+  background:linear-gradient(135deg,var(--bg1),var(--bg2),var(--bg3));
+  color:#fff;
+}
+
+/* HEADER */
+header{
+  padding:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{
+  background:linear-gradient(45deg,var(--primary),var(--secondary));
+  padding:12px 14px;
+  border-radius:14px;
+  font-weight:800;
+}
+.brand-title{font-weight:700}
+
+/* NAV */
+nav a{
+  color:#fff;
+  margin-left:18px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+/* CONTAINER */
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:30px 20px;
+}
+
+/* HERO */
+.hero{
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:40px;
+  align-items:center;
+  margin-bottom:60px;
+}
+.hero img{
+  max-width:280px;
+  filter:drop-shadow(0 15px 30px rgba(0,0,0,.5));
+}
+.hero h1{
+  font-size:36px;
+  margin-bottom:15px;
+}
+.hero p{
+  opacity:.9;
+  line-height:1.6;
+}
+.hero .btns{
+  margin-top:20px;
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  padding:14px 22px;
+  border-radius:14px;
+  background:linear-gradient(45deg,var(--success),#1ebe5d);
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  margin-right:10px;
+}
+.btn.secondary{
+  background:linear-gradient(45deg,var(--primary),var(--secondary));
+}
+
+/* SECTION */
+.section{
+  margin-bottom:70px;
+}
+.section h2{
+  font-size:28px;
+  margin-bottom:8px;
+}
+.section p{
+  opacity:.85;
+  margin-bottom:30px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+/* CARD */
+.card{
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(10px);
+  border-radius:22px;
+  padding:22px;
+  transition:.35s;
+}
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 20px 40px rgba(0,0,0,.45);
+}
+.card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:16px;
+  margin-bottom:12px;
+}
+
+/* FOOTER */
+.footer{
+  padding:40px 20px;
+  background:rgba(0,0,0,.3);
+}
+.footer .grid h3{
+  margin-bottom:8px;
+}
+.footer p{
+  font-size:14px;
+  opacity:.85;
+}
+
+/* FLOAT WHATS */
+.whatsapp-float{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  padding:16px 20px;
+  border-radius:50px;
+  color:#fff;
+  font-weight:600;
+  text-decoration:none;
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
+  z-index:999;
+}
+
+/* MOBILE */
+@media(max-width:800px){
+  .hero{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+  nav{display:none}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">
+    <div class="logo">UP</div>
+    <div>
+      <div class="brand-title">UP Experience Natal</div>
+      <small>Passeios completos pelo RN</small>
+    </div>
+  </div>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="rotas.html">Passeios</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="carrinho.html">Reservar</a>
+  </nav>
+</header>
+
+<main class="container">
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>Passeios Inesquecíveis em Natal e no RN</h1>
+    <p>
+      Viva o melhor do Rio Grande do Norte com conforto, segurança e experiências
+      selecionadas. Passeios bem avaliados, guias experientes e atendimento humano.
+    </p>
+    <div class="btns">
+      <a class="btn" href="rotas.html">Ver Passeios</a>
+      <a class="btn secondary" href="carrinho.html">Reservar Agora</a>
+    </div>
+  </div>
+
+  <div style="text-align:center">
+    <img src="WhatsApp Image 2026-02-10 at 14.43.49.jpeg" alt="UP Experience Natal">
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="section">
+<h2>Por que escolher a UP Experience?</h2>
+<div class="grid">
+  <div class="card">🚐 <strong>Transporte Confortável</strong><p>Veículos climatizados e seguros.</p></div>
+  <div class="card">🧭 <strong>Guias Locais</strong><p>Atendimento humanizado e experiente.</p></div>
+  <div class="card">⭐ <strong>Excelentes Avaliações</strong><p>Clientes reais e satisfeitos.</p></div>
+  <div class="card">🌊 <strong>Roteiros Exclusivos</strong><p>Os destinos mais desejados do RN.</p></div>
+</div>
+</section>
+
+<!-- DESTINOS -->
+<section class="section">
+<h2>Destinos Mais Procurados</h2>
+<div class="grid">
+  <div class="card"><img src="https://tse2.mm.bing.net/th/id/OIP.AMSDkYW1tv1mb36mTKt6LwHaJQ?rs=1&pid=ImgDetMain&o=7&rm=3"><strong>Pipa RN</strong></div>
+  <div class="card"><img src="https://tse1.mm.bing.net/th/id/OIP.9i1EKiIv_vPCHY4rjzBQSgHaFL?rs=1&pid=ImgDetMain&o=7&rm=3"><strong>Maracajaú</strong></div>
+  <div class="card"><img src="WhatsApp Image 2025-12-26 at 12.15.06.jpeg"><strong>Rio do Fogo</strong></div>
+  <div class="card"><img src="WhatsApp Image 2025-12-26 at 12.17.41.jpeg"><strong>Buggy em Genipabu</strong></div>
+</div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="section">
+<h2>O que dizem nossos clientes</h2>
+<div class="grid">
+  <div class="card">⭐⭐⭐⭐⭐<p>“Organização impecável e passeio incrível.”</p></div>
+  <div class="card">⭐⭐⭐⭐⭐<p>“Equipe atenciosa e roteiros maravilhosos.”</p></div>
+  <div class="card">⭐⭐⭐⭐⭐<p>“Experiência inesquecível no RN.”</p></div>
+</div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="grid">
+    <div>
+      <h3>UP Experience Natal</h3>
+      <p>Turismo receptivo em Natal e no RN.</p>
+    </div>
+    <div>
+      <h3>Contato</h3>
+      <p>📞 (84) 9963-8395</p>
+      <p>📧 contato@upexperiencenatal.com.br</p>
+    </div>
+    <div>
+      <h3>Redes Sociais</h3>
+      <p>📸 Instagram: @upexperiencenatal</p>
+    </div>
+  </div>
+
+  <p style="margin-top:20px;text-align:center">
+    © 2026 UP Experience Natal — Todos os direitos reservados
+  </p>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/558499638395">💬 WhatsApp</a>
+
+</body>
+</html>

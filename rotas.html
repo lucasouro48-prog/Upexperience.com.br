@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Passeios e Transfers no RN | UP Experience Natal</title>
+
+<meta name="description" content="Passeios e transfers no Rio Grande do Norte com a UP Experience Natal. Pipa RN, Maracajaú, Rio do Fogo, Buggy em Genipabu, Galinhos, 4x4, Quadriciclo, São Miguel do Gostoso e Transfers Aeroporto.">
+<meta name="keywords" content="Passeios RN, Transfer Natal, Pipa RN, Maracajaú RN, Rio do Fogo RN, Buggy Genipabu, Galinhos RN, 4x4 Litoral Sul, Quadriciclo RN, São Miguel do Gostoso">
+<meta name="author" content="UP Experience Natal">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --primary:#00c2ff;
+  --secondary:#ff005c;
+  --bg1:#0f2027;
+  --bg2:#203a43;
+  --bg3:#2c5364;
+  --success:#25D366;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+
+body{
+  background:linear-gradient(135deg,var(--bg1),var(--bg2),var(--bg3));
+  color:#fff;
+}
+
+/* HEADER */
+header{
+  padding:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{
+  background:linear-gradient(45deg,var(--primary),var(--secondary));
+  padding:12px 14px;
+  border-radius:14px;
+  font-weight:800;
+}
+.brand-title{font-weight:700}
+
+/* NAV */
+nav a{
+  color:#fff;
+  margin-left:18px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+/* CONTAINER */
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:30px 20px;
+}
+
+/* SEARCH */
+.search-box input{
+  width:100%;
+  padding:16px;
+  border-radius:16px;
+  border:none;
+  font-size:16px;
+  margin-bottom:30px;
+}
+
+/* TITLES */
+.section h2{
+  font-size:28px;
+  margin-bottom:6px;
+}
+.section p{
+  opacity:.85;
+  margin-bottom:28px;
+}
+
+/* GRID */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:28px;
+}
+
+/* CARD */
+.tour-card{
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(10px);
+  border-radius:22px;
+  overflow:hidden;
+  transition:.4s;
+  display:flex;
+  flex-direction:column;
+}
+.tour-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 20px 40px rgba(0,0,0,.45);
+}
+
+.tour-card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.tour-content{
+  padding:18px;
+  flex:1;
+}
+
+.tour-content h3{
+  font-size:19px;
+  margin-bottom:6px;
+}
+
+.rating{
+  color:#ffd700;
+  font-size:14px;
+  margin-bottom:8px;
+}
+
+.tour-content p{
+  font-size:14px;
+  line-height:1.5;
+  opacity:.95;
+  margin-bottom:10px;
+}
+
+.info{
+  font-size:13px;
+  opacity:.9;
+  margin-bottom:12px;
+}
+
+.price{
+  font-size:18px;
+  font-weight:700;
+  color:var(--primary);
+}
+
+/* BUTTON */
+.btn{
+  background:linear-gradient(45deg,var(--success),#1ebe5d);
+  color:#fff;
+  text-decoration:none;
+  padding:15px;
+  text-align:center;
+  font-weight:600;
+}
+
+/* FLOAT WHATS */
+.whatsapp-float{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  padding:16px 20px;
+  border-radius:50px;
+  color:#fff;
+  font-weight:600;
+  text-decoration:none;
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
+  z-index:999;
+}
+
+/* FOOTER */
+.footer{
+  text-align:center;
+  padding:25px;
+  opacity:.8;
+  font-size:14px;
+}
+
+@media(max-width:700px){
+  nav{display:none}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">
+    <div class="logo">UP</div>
+    <div>
+      <div class="brand-title">UP Experience Natal</div>
+      <div style="font-size:12px;opacity:.8">Passeios completos pelo RN</div>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="rotas.html">Passeios</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="carrinho.html">Reservar</a>
+  </nav>
+</header>
+
+<main class="container">
+
+<div class="search-box">
+<input type="text" id="search" placeholder="Pesquisar passeio ou transfer...">
+</div>
+
+<!-- PASSEIOS -->
+<section class="section">
+<h2>🌴 Passeios no Rio Grande do Norte</h2>
+<p>Experiências bem avaliadas, seguras e recomendadas</p>
+
+<div class="cards">
+
+<div class="tour-card" data-name="pipa rn">
+<img src="https://pipa.tur.br/wp-content/uploads/2024/12/WhatsApp-Image-2024-11-18-at-12.03.08-1.jpeg">
+<div class="tour-content">
+<h3>Pipa RN</h3>
+<div class="rating">⭐⭐⭐⭐⭐ 4.9</div>
+<p>Falésias, Praia do Amor, mirantes e centro de Pipa.</p>
+<div class="info">✔ Transporte • ✔ Guia • Dia inteiro</div>
+<div class="price">R$ 60,00</div>
+</div>
+<a class="btn" href="https://wa.me/558499638395?text=Quero reservar Pipa RN">Reservar</a>
+</div>
+
+<div class="tour-card" data-name="maracajau rn">
+<img src="https://tse3.mm.bing.net/th/id/OIP.OAmCAG51PzPONLIiGFFWogHaEo?rs=1&pid=ImgDetMain&o=7&rm=3">
+<div class="tour-content">
+<h3>Maracajaú RN</h3>
+<div class="rating">⭐⭐⭐⭐⭐ 4.8</div>
+<p>Parrachos, piscinas naturais e snorkel.</p>
+<div class="info">✔ Transporte • ✔ Catamarã</div>
+<div class="price">R$ 130,00</div>
+</div>
+<a class="btn" href="https://wa.me/558499638395?text=Quero reservar Maracajaú RN">Reservar</a>
+</div>
+
+<div class="tour-card" data-name="rio do fogo rn">
+<img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/4b/22/c3/parrachos-rio-do-fogo.jpg?w=1200&h=900&s=1">
+<div class="tour-content">
+<h3>Rio do Fogo RN</h3>
+<div class="rating">⭐⭐⭐⭐⭐ 4.7</div>
+<p>Piscinas naturais em mar aberto.</p>
+<div class="info">✔ Transporte • ✔ Lancha</div>
+<div class="price">R$ 150,00</div>
+</div>
+<a class="btn" href="https://wa.me/558499638395?text=Quero reservar Rio do Fogo RN">Reservar</a>
+</div>
+
+<div class="tour-card" data-name="buggy genipabu">
+<img src="https://tse3.mm.bing.net/th/id/OIP.8yGRt7RYQamhUUP6-9gBNAHaD2?rs=1&pid=ImgDetMain&o=7&rm=3">
+<div class="tour-content">
+<h3>Buggy Genipabu</h3>
+<div class="rating">⭐⭐⭐⭐⭐ 5.0</div>
+<p>Dunas, lagoas e praias do litoral norte.</p>
+<div class="info">✔ Buggy até 4 pessoas</div>
+<div class="price">R$ 150,00</div>
+</div>
+<a class="btn" href="https://wa.me/558499638395?text=Quero reservar Buggy Genipabu">Reservar</a>
+</div>
+
+<div class="tour-card" data-name="galinhos rn">
+<img src="https://th.bing.com/th/id/R.57512d700037d6db2c6c538d6fd05e2e?rik=OcVtH%2bDuLytzYg&pid=ImgRaw&r=0">
+<div class="tour-content">
+<h3>Galinhos RN</h3>
+<div class="rating">⭐⭐⭐⭐⭐ 4.6</div>
+<p>Vila rústica, dunas e passeio de barco.</p>
+<div class="info">✔ Transporte • ✔ Barco</div>
+<div class="price">R$ 180,00</div>
+</div>
+<a class="btn" href="https://wa.me/558499638395?text=Quero reservar Galinhos RN">Reservar</a>
+</div>
+
+<div class="tour-card" data-name="4x4 litoral sul">
+<img src="https://th.bing.com/th/id/OIP.9KTmxcCJsAtx-n6etrr1LQHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3">
+<div class="tour-content">
+<h3>4x4 Litoral Sul</h3>
+<div class="rating">⭐⭐⭐⭐⭐ 4.9</div>
+<p>Lagoas, falésias e trilhas off-road.</p>
+<div class="info">✔ Stand Up • ✔ Sandboard</div>
+<div class="price">R$ 150,00</div>
+</div>
+<a class="btn" href="https://wa.me/558499638395?text=Quero reservar 4x4 Litoral Sul">Reservar</a>
+</div>
+
+<div class="tour-card" data-name="quadriciclo">
+<img src="https://marazulreceptivo.com.br/wp-content/uploads/2024/10/Quadriciclo-em-punau-5-1-edited-1-scaled.jpg">
+<div class="tour-content">
+<h3>Quadriciclo</h3>
+<div class="rating">⭐⭐⭐⭐⭐ 4.8</div>
+<p>Aventura nas dunas e trilhas.</p>
+<div class="info">✔ Equipamentos inclusos</div>
+<div class="price">R$ 250,00</div>
+</div>
+<a class="btn" href="https://wa.me/558499638395?text=Quero reservar Quadriciclo">Reservar</a>
+</div>
+
+<div class="tour-card" data-name="sao miguel do gostoso">
+<img src="https://img.freepik.com/premium-photo/tourinhos-beach-sao-miguel-gostoso-rio-grande-norte-brazil_1153727-560.jpg?w=2000">
+<div class="tour-content">
+<h3>São Miguel do Gostoso</h3>
+<div class="rating">⭐⭐⭐⭐⭐ 4.7</div>
+<p>Praias, centro e opcional Tourinhos.</p>
+<div class="info">✔ Transporte • ✔ Guia</div>
+<div class="price">R$ 160,00</div>
+</div>
+<a class="btn" href="https://wa.me/558499638395?text=Quero reservar São Miguel do Gostoso">Reservar</a>
+</div>
+
+</div>
+</section>
+
+<!-- TRANSFERS -->
+<section class="section">
+<h2>🚐 Transfers Privativos</h2>
+<p>Conforto, segurança e pontualidade</p>
+
+<div class="cards">
+
+<div class="tour-card" data-name="transfer aeroporto pipa 4 pessoas">
+<img src="https://sounatalpasseios.com.br/wp-content/uploads/2025/08/transfer-natal-24-rn.webp">
+<div class="tour-content">
+<h3>Aeroporto → Pipa</h3>
+<div class="rating">⭐⭐⭐⭐⭐ 5.0</div>
+<p>Transfer privativo para até 4 pessoas.</p>
+<div class="price">R$ 250,00</div>
+</div>
+<a class="btn" href="https://wa.me/558499638395?text=Quero transfer Aeroporto para Pipa 4 pessoas">Reservar</a>
+</div>
+
+<div class="tour-card" data-name="transfer aeroporto pipa 6 pessoas">
+<img src="https://sounatalpasseios.com.br/wp-content/uploads/2025/08/transfer-natal-24-rn.webp">
+<div class="tour-content">
+<h3>Aeroporto → Pipa (6 pessoas)</h3>
+<div class="price">R$ 300,00</div>
+</div>
+<a class="btn" href="https://wa.me/558499638395?text=Quero transfer Aeroporto para Pipa 6 pessoas">Reservar</a>
+</div>
+
+<div class="tour-card" data-name="transfer aeroporto ponta negra">
+<img src="https://sounatalpasseios.com.br/wp-content/uploads/2025/08/transfer-natal-24-rn.webp">
+<div class="tour-content">
+<h3>Aeroporto → Ponta Negra</h3>
+<div class="price">R$ 120,00</div>
+</div>
+<a class="btn" href="https://wa.me/558499638395?text=Quero transfer Aeroporto para Ponta Negra">Reservar</a>
+</div>
+
+<div class="tour-card" data-name="transfer pipa sao miguel">
+<img src="https://sounatalpasseios.com.br/wp-content/uploads/2025/08/transfer-natal-24-rn.webp">
+<div class="tour-content">
+<h3>Pipa → São Miguel do Gostoso</h3>
+<div class="price">R$ 700,00</div>
+</div>
+<a class="btn" href="https://wa.me/558499638395?text=Quero transfer Pipa para São Miguel do Gostoso">Reservar</a>
+</div>
+
+</div>
+</section>
+
+</main>
+
+<footer class="footer">
+© UP Experience Natal — Turismo com identidade nordestina
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/558499638395">💬 WhatsApp</a>
+
+<script>
+const search = document.getElementById("search");
+const cards = document.querySelectorAll(".tour-card");
+search.addEventListener("keyup",()=>{
+  const v=search.value.toLowerCase();
+  cards.forEach(c=>{
+    c.style.display=c.dataset.name.includes(v)?"flex":"none";
+  });
+});
+</script>
+
+</body>
+</html>

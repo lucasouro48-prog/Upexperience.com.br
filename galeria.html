@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Passeios e Transfers em Natal RN | UP Experience Natal</title>
+
+<meta name="description" content="Passeios e transfers em Natal RN com a UP Experience Natal. Pipa, Maracajaú, Rio do Fogo, Genipabu, Galinhos, João Pessoa e transfers aeroporto e hotéis.">
+<meta name="keywords" content="Passeios Natal RN, Transfer Natal RN, Pipa RN, Maracajaú RN, Rio do Fogo RN, João Pessoa PB, Buggy Genipabu">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --primary:#00c2ff;
+  --secondary:#ff005c;
+  --success:#25D366;
+  --bg1:#0f2027;
+  --bg2:#203a43;
+  --bg3:#2c5364;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
+}
+
+body{
+  background:linear-gradient(135deg,var(--bg1),var(--bg2),var(--bg3));
+  color:#fff;
+}
+
+/* HEADER */
+header{
+  padding:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.brand{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+
+.logo{
+  background:linear-gradient(45deg,var(--primary),var(--secondary));
+  padding:12px 16px;
+  border-radius:14px;
+  font-weight:800;
+  font-size:18px;
+}
+
+.brand-text strong{font-size:15px;}
+.brand-text span{font-size:12px;opacity:.8;}
+
+nav a{
+  color:#fff;
+  margin-left:18px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+@media(max-width:700px){
+  nav{display:none;}
+}
+
+/* CONTEÚDO */
+main{
+  padding:40px 6%;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:28px;
+}
+
+/* CARD */
+.card{
+  background:rgba(255,255,255,0.08);
+  border-radius:20px;
+  overflow:hidden;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+}
+
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:18px;
+}
+
+.card-content h3{
+  font-size:18px;
+  margin-bottom:6px;
+}
+
+.rating{
+  font-size:14px;
+  color:#ffd700;
+}
+
+.desc{
+  font-size:14px;
+  opacity:.9;
+  margin:10px 0;
+}
+
+.comments p{
+  font-size:13px;
+  opacity:.85;
+  font-style:italic;
+}
+
+.btn{
+  display:block;
+  margin-top:14px;
+  text-align:center;
+  padding:12px;
+  border-radius:12px;
+  background:linear-gradient(45deg,var(--primary),var(--secondary));
+  color:#fff;
+  font-weight:600;
+  text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+  background:rgba(0,0,0,0.35);
+  padding:40px 6%;
+  margin-top:60px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
+}
+
+.footer-grid h3{
+  margin-bottom:10px;
+}
+
+.footer-grid p{
+  font-size:14px;
+  opacity:.9;
+}
+
+.footer-bottom{
+  text-align:center;
+  margin-top:30px;
+  font-size:13px;
+  opacity:.7;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">
+    <div class="logo">UP</div>
+    <div class="brand-text">
+      <strong>UP Experience Natal</strong><br>
+      <span>Passeios completos pelo RN</span>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="rotas.html">Passeios</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="carrinho.html">Reservar</a>
+  </nav>
+</header>
+
+<main>
+<section class="cards">
+<!-- PASSEIOS -->
+<div class="card">
+<img src="https://fcf51e9cb1.clvaw-cdnwnd.com/22d6f83774c3e261d0bcb7364e77ab83/200004231-b2368b236b/praia%20da%20Pipa-1.jpeg">
+<div class="card-content">
+<h3>Pipa RN</h3>
+<div class="rating">⭐⭐⭐⭐⭐ 4.9</div>
+<p class="desc">Falésias, golfinhos, praias famosas e vilinha charmosa.</p>
+<div class="comments">
+<p>“Passeio perfeito, super organizado.”</p>
+<p>“Melhor dia da viagem.”</p>
+</div>
+<a href="carrinho.html" class="btn">Reservar passeio</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://tse1.mm.bing.net/th/id/OIP.Ae36DquqlSyFie04ZwX_NQHaEA">
+<div class="card-content">
+<h3>Maracajaú RN</h3>
+<div class="rating">⭐⭐⭐⭐⭐ 4.9</div>
+<p class="desc">Piscinas naturais, mergulho e águas cristalinas.</p>
+<div class="comments">
+<p>“Experiência única.”</p>
+<p>“Equipe muito profissional.”</p>
+</div>
+<a href="carrinho.html" class="btn">Reservar passeio</a>
+</div>
+</div>
+
+<div class="card">
+<img src="WhatsApp Image 2025-12-26 at 12.15.06.jpeg">
+<div class="card-content">
+<h3>Rio do Fogo RN</h3>
+<div class="rating">⭐⭐⭐⭐⭐ 4.8</div>
+<p class="desc">Piscinas naturais tranquilas e ideais para famílias.</p>
+<div class="comments">
+<p>“Passeio leve e lindo.”</p>
+<p>“Água perfeita.”</p>
+</div>
+<a href="carrinho.html" class="btn">Reservar passeio</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://cache.quantocustaviajar.com/blog/wp-content/uploads/2018/12/dunas-de-genipabu-1.jpg">
+<div class="card-content">
+<h3>Buggy em Genipabu</h3>
+<div class="rating">⭐⭐⭐⭐⭐ 5.0</div>
+<p class="desc">Dunas, lagoas e emoção com bugueiros credenciados.</p>
+<div class="comments">
+<p>“Adrenalina pura!”</p>
+<p>“Bugueiro excelente.”</p>
+</div>
+<a href="carrinho.html" class="btn">Reservar passeio</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://www.natalpraias.com.br/wp-content/uploads/2015/09/Galinhos-RN-BRASIL.jpg">
+<div class="card-content">
+<h3>Galinhos RN</h3>
+<div class="rating">⭐⭐⭐⭐⭐ 4.8</div>
+<p class="desc">Vila paradisíaca, dunas e passeio de barco.</p>
+<div class="comments">
+<p>“Lugar incrível.”</p>
+<p>“Tudo muito bem organizado.”</p>
+</div>
+<a href="carrinho.html" class="btn">Reservar passeio</a>
+</div>
+</div>
+
+<div class="card">
+<img src="WhatsApp Image 2025-12-26 at 12.16.36.jpeg">
+<div class="card-content">
+<h3>4x4 Litoral Sul</h3>
+<div class="rating">⭐⭐⭐⭐⭐ 4.9</div>
+<p class="desc">Falésias, praias, lagoas e aventura off-road.</p>
+<div class="comments">
+<p>“Visual incrível.”</p>
+<p>“Passeio diferenciado.”</p>
+</div>
+<a href="carrinho.html" class="btn">Reservar passeio</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://th.bing.com/th/id/R.71bfa19b4e8297d71e5722f121b8944e?rik=rN8rdwM05TNEmg&pid=ImgRaw&r=0">
+<div class="card-content">
+<h3>Quadriciclo</h3>
+<div class="rating">⭐⭐⭐⭐⭐ 5.0</div>
+<p class="desc">Aventura e diversão nas dunas de Natal.</p>
+<div class="comments">
+<p>“Muito divertido!”</p>
+<p>“Vale a pena demais.”</p>
+</div>
+<a href="carrinho.html" class="btn">Reservar passeio</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://tse3.mm.bing.net/th/id/OIP.Obn6cjD5v0oB8m6LmkojmwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3 ">
+<div class="card-content">
+<h3>Lagoas do Litoral Sul</h3>
+<div class="rating">⭐⭐⭐⭐⭐ 4.9</div>
+<p class="desc">Lagoas naturais, descanso e paisagens incríveis.</p>
+<div class="comments">
+<p>“Água deliciosa.”</p>
+<p>“Muito relaxante.”</p>
+</div>
+<a href="carrinho.html" class="btn">Reservar passeio</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://www.mundoviajante.com/wp-content/uploads/2024/01/praias_sao_miguel_do_gostoso.jpeg">
+<div class="card-content">
+<h3>São Miguel do Gostoso</h3>
+<div class="rating">⭐⭐⭐⭐⭐ 4.9</div>
+<p class="desc">Praias tranquilas, ventos perfeitos e pôr do sol.</p>
+<div class="comments">
+<p>“Cidade encantadora.”</p>
+<p>“Clima maravilhoso.”</p>
+</div>
+<a href="carrinho.html" class="btn">Reservar passeio</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://tse3.mm.bing.net/th/id/OIP.pL4z3dIXkk12rLfJ2iCJIQHaFj?rs=1&pid=ImgDetMain&o=7&rm=3">
+<div class="card-content">
+<h3>João Pessoa – PB</h3>
+<div class="rating">⭐⭐⭐⭐⭐ 4.9</div>
+<p class="desc">Praias urbanas, centro histórico e cultura.</p>
+<div class="comments">
+<p>“Cidade linda.”</p>
+<p>“Passeio completo.”</p>
+</div>
+<a href="carrinho.html" class="btn">Reservar passeio</a>
+</div>
+</div>
+
+<!-- TRANSFERS -->
+<div class="card">
+<img src="https://tse3.mm.bing.net/th/id/OIP.jMMh84qiJpUH_1ZNBb6F5gHaEK?rs=1&pid=ImgDetMain&o=7&rm=3">
+<div class="card-content">
+<h3>Transfer Aeroporto</h3>
+<div class="rating">⭐⭐⭐⭐⭐ 5.0</div>
+<p class="desc">Aeroporto ⇄ hotéis | Pontualidade e conforto.</p>
+<div class="comments">
+<p>“Chegamos tranquilos.”</p>
+<p>“Motorista educado.”</p>
+</div>
+<a href="carrinho.html" class="btn">Solicitar transfer</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://sounatalpasseios.com.br/wp-content/uploads/2025/08/transfer-natal-24-rn.webp">
+<div class="card-content">
+<h3>Transfer Passeios & Hotéis</h3>
+<div class="rating">⭐⭐⭐⭐⭐ 4.9</div>
+<p class="desc">Deslocamento seguro entre praias e passeios.</p>
+<div class="comments">
+<p>“Muito confortável.”</p>
+<p>“Excelente atendimento.”</p>
+</div>
+<a href="carrinho.html" class="btn">Solicitar transfer</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<footer>
+<div class="footer-grid">
+<div>
+<h3>UP Experience Natal</h3>
+<p>Turismo receptivo e transfers em Natal e RN.</p>
+</div>
+
+<div>
+<h3>Contato</h3>
+<p>📍 Natal – RN</p>
+<p>📞 WhatsApp: (84) 9963-8395</p>
+<p>📧 contato@upexperiencenatal.com.br</p>
+</div>
+
+<div>
+<h3>Redes Sociais</h3>
+<p>📸 Instagram: @upexperiencenatal</p>
+</div>
+</div>
+
+<div class="footer-bottom">
+© 2026 UP Experience Natal — Todos os direitos reservados
+</div>
+</footer>
+
+</body>
+</html>
